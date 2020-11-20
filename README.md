@@ -4,38 +4,38 @@
 
 2. Clone this repositry
 
-git clone https://github.com/kasundezoysa/tor.git
+  git clone https://github.com/kasundezoysa/tor.git
 
 3. Change to the tor directoray
 
-cd tor
+  cd tor
 
 4. Change the permission of torrc director
 
-chmod 700 torrc
+  chmod 700 torrc
 
-5. If you running tor as the diffrent user (eg. root) change the owner of the torrc director 
+5. If you are running tor as the diffrent user (eg. root) change the owner of the torrc director 
 
-chown root torrc/
+  chown root torrc/
 
-6. Build the necessary docker images by running 
+6. Build the necessary docker images by running the following command (you may need to use sudo)
 
-docker-compose build
+  docker-compose build
 
-7. Deploy the tor hidden service
+7. Deploy the tor hidden service by running the following command (you may need to use sudo)
 
-sudo docker-compose up
+  sudo docker-compose up
 
 8. Open a dirrerent terminal and edit your hidden web page
 
-vi tor/html/index.html
+  vi tor/html/index.html
 
-8. View the hidden service address
+8. View your hidden Web service address (you may need to use sudo) 
 
-cat tor/torrc/hostname
+  cat tor/torrc/hostname
 
-10. Start the Tor browser and past the above hidden service URL
+10. Start a Tor browser and visit the above hidden service
 
-eg: kadnpvw6jtul2knb22ifcz6fjc6ot4s33dfy7wefvg3utualcdoud4qd.onion
+  eg: kadnpvw6jtul2knb22ifcz6fjc6ot4s33dfy7wefvg3utualcdoud4qd.onion
 
 
