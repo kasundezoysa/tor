@@ -1,0 +1,17 @@
+version: "3"
+services:
+   # Apache Web Sever
+    web:
+     image: httpd:2.4
+     volumes:
+       - ./html:/usr/local/apache2/htdocs
+     restart: always
+
+   # Tor Proxy
+    tor:
+     build: .
+     ports:
+       - 9050:9050
+     volumes:
+       - ./torrc:/usr/local/etc/tor/
+     restart: always
