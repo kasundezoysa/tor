@@ -1,11 +1,11 @@
 # Running a Tor Hidden Service
 
-## 1. Install docker and docker-compose
+*1. Install docker and docker-compose*
 
-## 2. Clone this repositry
+*2. Clone this repositry*
 _git clone https://github.com/kasundezoysa/tor.git_
 
-## 3. Change to the tor directoray
+*3. Change to the tor directoray*
 _cd tor_
 
 4. Change the permission of torrc director
